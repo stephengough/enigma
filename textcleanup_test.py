@@ -7,7 +7,7 @@ class TextCleanup(unittest.TestCase):
 		self.x = textcleanup.TextCleanup()
 
 	def test_remove_unknown_characters(self):
-		m = '123 |@~ A*B£C!()'
+		m = '123 |@~ A*B#C!()'
 		o = self.x.preprocess(m)
 		self.assertEqual('ABC', o)
 		
